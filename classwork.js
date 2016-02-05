@@ -19,3 +19,8 @@ Particle.prototype = {
     }
   }
 }
+
+for (var i = 0; i < 101; i++) {
+  particles.push(new Particle(i, Math.random()*500)){};
+}
+console.log(particles);
