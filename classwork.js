@@ -4,3 +4,6 @@ function Particle(startX, startY){
 }
 
 var particles = []
+
+var time = 0;
+var gravity = 0.5;
