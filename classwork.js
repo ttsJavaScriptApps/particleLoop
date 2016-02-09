@@ -3,7 +3,6 @@ function Particle(startX, startY){
   this.y = startY;
 }
 
-var particles = []
 
 var time = 0;
 var gravity = 0.5;
@@ -18,4 +17,10 @@ Particle.prototype = {
       console.log("bottom");
     }
   }
+};
+
+var particles = [];
+for (var i = 0; i < 101; i++) {
+  particles.push(new Particle(i, Math.random()*500));
 }
+console.log(particles);
